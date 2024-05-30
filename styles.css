@@ -1,0 +1,54 @@
+/* Dark theme */
+body {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#mediaPlayer {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    background-color: aqua; /* Aqua background color for input */
+    color: #000; /* Dark text color for input */
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: aqua; /* Aqua background color for button */
+    color: #000; /* Dark text color for button */
+}
+
+/* Adjust video size */
+video {
+    max-width: 100%; /* Make sure the video doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.plyr__controls .plyr__controls__item.plyr__settings {
+    display: block !important;
+}
+
+#speedIndicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    display: none;
+    pointer-events: none;
+    z-index: 1000; /* Ensure it's above other elements */
+}
